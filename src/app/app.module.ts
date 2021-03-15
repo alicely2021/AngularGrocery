@@ -2,23 +2,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { GroceryComponent } from './app.grocery';
 import { FormsModule } from '@angular/forms';
-// import { ReactiveFormsModule } from '@angular/forms';
-// import { CommonModule } from '@angular/common';
-// import { AppComponent } from './app.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { AppComponent } from './app.component';
+import { GroceryComponent } from './app.grocery';
 
 
 @NgModule({
   declarations: [
-    // AppComponent,
+    AppComponent,
     GroceryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    // CommonModule,
-    // ReactiveFormsModule,
+    CommonModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

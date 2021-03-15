@@ -9,8 +9,12 @@ import { Component } from '@angular/core';
 })
  
 export class GroceryComponent {
-    task = {
-        name: '',
-      };
+  task: string;
+  tasks = [];
+ 
+  onClick(){
+    this.tasks.push({name: this.task});
+    this.task = '';
+  }
 }
    
